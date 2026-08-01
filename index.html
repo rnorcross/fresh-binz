@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-546K2FLJ9M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-546K2FLJ9M');
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fresh Binz — Trash Bin Cleaning | Book Your First Clean</title>
 <meta name="description" content="Fresh Binz delivers high-pressure trash bin cleaning and sanitizing right at your curb. Kill bacteria, eliminate odors, keep pests away — on your regular trash day.">
@@ -299,7 +308,7 @@ footer .fine{margin-top:20px;color:#8b9199;font-size:.8rem;font-weight:600}
     <span>FRESH <span class="nz">BINZ</span></span>
   </a>
   <div class="nav-right">
-    <a class="nav-phone" href="tel:+18501234567">(850) 123-4567</a>
+    <a class="nav-phone" href="tel:+18507554263">(850) 755-4263</a>
     <a class="btn btn-sm" href="#pricing">Book Now</a>
   </div>
 </nav>
@@ -312,16 +321,16 @@ footer .fine{margin-top:20px;color:#8b9199;font-size:.8rem;font-weight:600}
 
   <img class="hero-logo" src="assets/logo-wide.jpg" alt="Fresh Binz — Trash Bin Cleaning">
   <h1 class="display">Trash day shouldn't <span class="smell">smell</span> like trash day.</h1>
-  <p>Your bins are the dirtiest thing you touch every week. We fix that — high-pressure hot-water cleaning, hospital-grade sanitizing, and odor elimination, right at your curb on your regular trash day.</p>
+  <p>Your bins are the dirtiest thing you touch every week. We fix that — high-pressure water cleaning, hospital-grade sanitizing, and odor elimination, right at your curb on your regular trash day.</p>
   <div class="hero-ctas">
     <a class="btn" href="#pricing">Pick Your Plan</a>
-    <a class="btn btn-blue" href="tel:+18501234567">Call to Book</a>
+    <a class="btn btn-blue" href="tel:+18507554263">Call to Book</a>
   </div>
   <div class="hero-note">No contracts. Cancel anytime. You never lift a finger.</div>
 </header>
 
 <div class="strip" role="list">
-  <span role="listitem"><i class="dot"></i>190°+ high-pressure wash</span>
+  <span role="listitem"><i class="dot"></i>High-pressure power wash</span>
   <span role="listitem"><i class="dot"></i>Kills 99.9% of bacteria</span>
   <span role="listitem"><i class="dot"></i>Eco-safe & water reclaimed</span>
   <span role="listitem"><i class="dot"></i>Curbside on trash day</span>
@@ -349,7 +358,7 @@ footer .fine{margin-top:20px;color:#8b9199;font-size:.8rem;font-weight:600}
   <div class="steps">
     <div class="step"><span class="n display">1</span><b>Book in 60 seconds</b><p>Pick a plan above and check out securely with Stripe. We match your service to your trash pickup day.</p></div>
     <div class="step"><span class="n display">2</span><b>Roll out your bins</b><p>That's it — that's your whole job. Leave bins at the curb after pickup and we handle the rest.</p></div>
-    <div class="step"><span class="n display">3</span><b>We wash & sanitize</b><p>High-pressure heated water inside and out, then sanitizer kills the bacteria and neutralizes odor at the source.</p></div>
+    <div class="step"><span class="n display">3</span><b>We wash & sanitize</b><p>High-pressure water inside and out, then sanitizer kills the bacteria and neutralizes odor at the source.</p></div>
     <div class="step"><span class="n display">4</span><b>Come home to Fresh Binz</b><p>Clean, great-smelling bins waiting for you — no mess left behind, plus a text confirmation.</p></div>
   </div>
 </section>
@@ -357,7 +366,7 @@ footer .fine{margin-top:20px;color:#8b9199;font-size:.8rem;font-weight:600}
 <footer>
   <img class="f-logo" src="assets/logo-icon.jpg" alt="Fresh Binz icon">
   <div class="f-cta">Book your first clean today</div>
-  <a class="tel" href="tel:+18501234567">(850) 123-4567</a>
+  <a class="tel" href="tel:+18507554263">(850) 755-4263</a>
   <p class="fine">© <span id="yr"></span> Fresh Binz — Trash Bin Cleaning. Eco-safe solutions. Wash water reclaimed.</p>
 </footer>
 
@@ -372,9 +381,9 @@ const STRIPE_LINKS = {
   monthly_2bin:  "https://buy.stripe.com/14A00j2Ilf0ZboN0lP3F601", // $30/mo recurring
   biweekly_1bin: "https://buy.stripe.com/14A9ATaaNaKJ8cBc4x3F602", // $30/mo recurring
   biweekly_2bin: "https://buy.stripe.com/00w00j1Eh1a9eAZ7Oh3F603", // $40/mo recurring
-  onetime_1bin:  "https://buy.stripe.com/eVqfZh4Qt0653Wl3y13F604"  // $40 one-time
+  onetime_1bin:  "https://buy.stripe.com/3cI9AT96JdWV0K99Wp3F605"  // $50 one-time
 };
-const FALLBACK = "tel:+18501234567";
+const FALLBACK = "tel:+18507554263";
 const link = k => (STRIPE_LINKS[k] && STRIPE_LINKS[k].startsWith("http")) ? STRIPE_LINKS[k] : FALLBACK;
 
 const PLANS = {
@@ -409,10 +418,10 @@ const PLANS = {
   onetime: {
     blurb: "Perfect for move-ins, post-party cleanup, or a fresh start before subscribing.",
     cards: [
-      { lid:"Deep Clean", price:"$40", per:" one-time", name:"One-Time Deep Clean — 1 Bin",
+      { lid:"Deep Clean", price:"$50", per:" one-time", name:"One-Time Deep Clean — 1 Bin",
         detail:"Years of caked-on grime, mold & mystery sludge — gone in minutes.",
         feats:["Full high-pressure deep clean","Sanitize + deodorize","No subscription required"],
-        key:"onetime_1bin", cta:"Book Deep Clean — $40" }
+        key:"onetime_1bin", cta:"Book Deep Clean — $50" }
     ]
   }
 };
