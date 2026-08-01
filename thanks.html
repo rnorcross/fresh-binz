@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're Booked! — Fresh Binz</title>
+<link rel="icon" type="image/jpeg" href="assets/logo-icon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--lime:#A6D426;--ink:#141518;--blue:#1E9BF0;--paper:#FAFBF6;--gray:#5A6068}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);
+  min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center}
+.card{max-width:560px;background:#fff;border:3px solid var(--ink);border-radius:20px;
+  box-shadow:7px 7px 0 var(--ink);padding:48px 36px}
+img{width:96px;margin:0 auto 20px;border-radius:18px;display:block}
+h1{font-family:'Anton',sans-serif;text-transform:uppercase;transform:skewX(-4deg);
+  font-size:clamp(1.8rem,5vw,2.6rem);margin-bottom:14px}
+h1 span{color:var(--blue)}
+p{color:var(--gray);font-weight:600;margin-bottom:12px}
+.btn{display:inline-block;margin-top:18px;font-family:'Anton',sans-serif;text-transform:uppercase;
+  letter-spacing:.04em;background:var(--lime);color:var(--ink);border:3px solid var(--ink);
+  border-radius:12px;padding:.65em 1.4em;text-decoration:none;transform:skewX(-4deg);
+  box-shadow:4px 4px 0 var(--ink)}
+a.tel{color:var(--blue);font-weight:800;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="card">
+  <img src="assets/logo-icon.jpg" alt="Fresh Binz logo">
+  <h1>You're booked. <span>We've got it from here.</span></h1>
+  <p>Payment received — welcome to Fresh Binz! We'll text you shortly to confirm your trash pickup day and your first service date.</p>
+  <p>Questions in the meantime? Call or text <a class="tel" href="tel:+18501234567">(850) 123-4567</a>.</p>
+  <a class="btn" href="index.html">Back to Home</a>
+</div>
+</body>
+</html>
