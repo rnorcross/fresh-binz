@@ -379,6 +379,7 @@ footer .fine{margin-top:20px;color:#8b9199;font-size:.8rem;font-weight:600}
 const STRIPE_LINKS = {
   monthly_1bin:  "https://buy.stripe.com/fZu28rer31a9csR8Sl3F600", // $20/mo recurring
   monthly_2bin:  "https://buy.stripe.com/14A00j2Ilf0ZboN0lP3F601", // $30/mo recurring
+  monthly_3bin:  "https://buy.stripe.com/4gMcN582F8CBakJecF3F606", // $40/mo recurring
   biweekly_1bin: "https://buy.stripe.com/14A9ATaaNaKJ8cBc4x3F602", // $30/mo recurring
   biweekly_2bin: "https://buy.stripe.com/00w00j1Eh1a9eAZ7Oh3F603", // $40/mo recurring
   onetime_1bin:  "https://buy.stripe.com/3cI9AT96JdWV0K99Wp3F605"  // $50 one-time
@@ -398,7 +399,11 @@ const PLANS = {
         name:"Monthly Clean — 2 Bins",
         detail:"Both bins, every month. Save $10/mo when you bundle.",
         feats:["Everything in Single Bin","Covers trash + recycling","Bundle & save"],
-        key:"monthly_2bin", cta:"Start Monthly — $30/mo", save:"Save $10/mo" }
+        key:"monthly_2bin", cta:"Start Monthly — $30/mo", save:"Save $10/mo" },
+      { lid:"Three Bins", price:"$40", per:"/mo", name:"Monthly Clean — 3 Bins",
+        detail:"Trash, recycling & yard waste — every bin at your curb, covered.",
+        feats:["All three bins, every month","Best bundle value","Service on your trash day"],
+        key:"monthly_3bin", cta:"Start Monthly — $40/mo", save:"Save $20/mo" }
     ]
   },
   biweekly: {
